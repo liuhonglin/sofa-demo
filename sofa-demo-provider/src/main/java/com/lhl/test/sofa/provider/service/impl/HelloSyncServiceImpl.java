@@ -11,7 +11,8 @@ import org.springframework.stereotype.Component;
  * @Date 2019/1/31 18:02
  */
 @Component
-@SofaService(interfaceType = HelloSyncService.class, bindings = {@SofaServiceBinding(bindingType = "bolt")})
+@SofaService(interfaceType = HelloSyncService.class,
+             bindings = {@SofaServiceBinding(bindingType = "bolt", timeout = 10000, warmUpTime = 5000, warmUpWeight = 20, weight = 100)})
 public class HelloSyncServiceImpl implements HelloSyncService {
 
     @Override

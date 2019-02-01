@@ -19,7 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/sofa-demo")
 public class HelloController {
 
-    @SofaReference(interfaceType = HelloSyncService.class, binding = @SofaReferenceBinding(bindingType = "bolt"))
+    @SofaReference(interfaceType = HelloSyncService.class,
+            binding = @SofaReferenceBinding(bindingType = "bolt", timeout = 3000, retries = -1))
     private HelloSyncService helloSyncService;
 
     @GetMapping("/hello")
