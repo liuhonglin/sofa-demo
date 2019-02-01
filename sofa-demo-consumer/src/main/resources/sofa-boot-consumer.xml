@@ -7,6 +7,7 @@
             http://sofastack.io/schema/sofaboot   http://sofastack.io/schema/sofaboot.xsd"
        default-autowire="byName">
 
+    <!-- 使用注解方式，不再使用该xml -->
     <sofa:reference id="helloSyncService" interface="com.lhl.test.sofa.services.HelloSyncService">
         <!-- 接口的协议是 bolt，也就是阿里的 RPC 网络通信框架 solt（基于 Netty 的最佳实践） -->
         <sofa:binding.bolt/>

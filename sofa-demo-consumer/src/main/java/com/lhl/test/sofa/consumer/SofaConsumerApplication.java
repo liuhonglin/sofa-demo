@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
  * @Author liuhonglin
  * @Date 2019/1/31 18:56
  */
-@ImportResource({"classpath*:sofa-boot-consumer.xml"})
+//改用注解方式 @ImportResource({"classpath*:sofa-boot-consumer.xml"})
 @SpringBootApplication
 public class SofaConsumerApplication {
 

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
  * @Author liuhonglin
  * @Date 2019/1/31 18:52
  */
-@ImportResource({"classpath*:sofa-boot-provider.xml"})
+//改用注解方式 @ImportResource({"classpath*:sofa-boot-provider.xml"})
 @SpringBootApplication
 public class Application {
 
